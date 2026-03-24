@@ -1,4 +1,4 @@
-# MasterDPM: Diffusion Probabilistic Models for Master Equation Solving and Inference
+# Learning time-resolved trajectory distributions of state transition networks with diffusion-based generative models
 
 <p align="center">
   <!-- Add a relevant image or logo here if available -->
