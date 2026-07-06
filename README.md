@@ -8,25 +8,25 @@
 
 DiSTNet is a framework designed to solve and infer master equations using diffusion probabilistic models (DPMs). The framework leverages conditional diffusion models to handle stochastic dynamics, enabling both the solution of master equations and the inference of parameters from observed data. This approach provides an effective way to model complex stochastic systems in various domains, such as chemical reactions, population dynamics, and biological networks.
 
-The framework is extensible and user-friendly. Users can define their specific master equation problems by providing configuration files, allowing for both forward solving and inverse inference tasks. MasterDPM consists of two main components: MasterDPM-Solver and MasterDPM-Inferrer.
+The framework is extensible and user-friendly. Users can define their specific master equation problems by providing configuration files, allowing for both forward solving and inverse inference tasks. DiSTNet consists of two main components: DiSTNet-Solver and DiSTNet-Inferrer.
 
 ## DiSTNet-Solver: Solving Master Equations with Diffusion Models
 
-Traditional approaches to solving master equations face significant computational challenges, especially for high-dimensional systems. Analytical and numerical methods often require substantial computational resources or trade accuracy for efficiency. MasterDPM-Solver employs a conditional diffusion model architecture based on U-Net to efficiently approximate the solution of complex master equations.
+Traditional approaches to solving master equations face significant computational challenges, especially for high-dimensional systems. Analytical and numerical methods often require substantial computational resources or trade accuracy for efficiency. DiSTNet-Solver employs a conditional diffusion model architecture based on U-Net to efficiently approximate the solution of complex master equations.
 
 The diffusion process gradually adds noise to the system state, while the reverse process learns to denoise step-by-step, effectively learning the underlying dynamics of the system governed by the master equation.
 
 ## DiSTNet-Inferrer: Parameter Inference from Observed Data
 
-Parameter inference from observed data is crucial for understanding stochastic systems. MasterDPM-Inferrer uses a trained neural network to efficiently estimate posterior distributions of master equation parameters through conditional sampling. By leveraging automatic differentiation and neural approximations, the inferrer can efficiently learn system parameters from limited observations.
+Parameter inference from observed data is crucial for understanding stochastic systems. DiSTNet-Inferrer uses a trained neural network to efficiently estimate posterior distributions of master equation parameters through conditional sampling. By leveraging automatic differentiation and neural approximations, the inferrer can efficiently learn system parameters from limited observations.
 
 ## Installation
 
 Run the following command to create a new environment and activate the environment:
 
 ```bash
-conda create --name masterdpm_env python=3.8
-conda activate masterdpm_env
+conda create --name DiSTNet_env python=3.8
+conda activate DiSTNet_env
 ```
 
 Download the code and use the `cd` command to navigate to the directory containing the setup files:
